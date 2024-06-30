@@ -12,14 +12,26 @@
 <body>
     <div class="page">
         <div class="box">
-            <h1>숫자 맞추기 게임</h1>
+            <div class="box_title">
+                <h1>숫자 맞추기 게임!!</h1>
+                <h3 style="opacity: 0.5;">1 ~ 50 사이의 숫자를 입력해 주세요.</h3>
+            </div>
             <div>
-                <input type="number" class="user_num">
+                <input type="number" class="user_num" placeholder="1부터 50부터 숫자를 입력해주세요">
                 <button class="go_btn">Go</button>
                 <button class="reset_btn" style="opacity: 0;">Reset</button>
+                <h2 style="margin-top: 20px;" class="result">게임 시작!</h2>
+                <div class="hangman">
+                    <span class="hangman-part-1"></span>
+                    <span class="hangman-part-2"></span>
+                    <span class="hangman-part-3"></span>
+                    <span class="hangman-part-4"></span>
+                    <span class="hangman-part-5"></span>
+                    <span class="hangman-part-6"></span>
+                    <span class="hangman-part-7"></span>
+                </div>
                 <h2 class="chance"></h2>
             </div>
-            <h2 style="margin-top: 20px;" class="result">게임 시작!</h2>
         </div>
     </div>
  </body>

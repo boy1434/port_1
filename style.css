@@ -18,6 +18,12 @@
     flex-direction: column;
     align-items: center;
     background-color: #A2E1D8;
+    gap: 20px;
+}
+.box_title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 #input_num {
     margin-top: 30px;
@@ -34,7 +40,91 @@ button:hover {
     background-color: rgb(204, 79, 56);
 }
 input {
-    width: 200px;
+    width: 250px;
     height: 30px;
     border: 0;
+    border-radius: 10px;
+    padding: 20px
+}
+.hangman {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 200px;
+}
+.hang_head {
+    width: 100%;
+    height: 100px;
+    display: inline;
+}
+.hang_body {
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.hangman-part-1{
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border-radius: 50%;
+    display: none;
+}
+.hangman-part-2{
+    width: 3px;
+    height: 50px;
+    background-color: black;
+    display: none;
+}
+.hangman-part-3 {
+    width: 3px;
+    height: 50px;
+    background-color: black;
+    transform: rotate(90deg);
+    position: absolute;
+    margin-right: 50px;
+    display: none;
+    top: 50%;
+}
+.hangman-part-4 {
+    width: 3px;
+    height: 50px;
+    background-color: black;
+    transform: rotate(90deg);
+    margin-left: 50px;
+    position: absolute;
+    display: none;
+    top: 50%;
+}
+.hangman-part-5{
+    width: 3px;
+    height: 50px;
+    background-color: black;
+    transform: rotate(45deg);
+    margin-right: 35px;
+    position: absolute;
+    margin-top: 42px;
+    display: none;
+    top: 50%;
+}
+.hangman-part-6{
+    width: 3px;
+    height: 50px;
+    background-color: black;
+    transform: rotate(135deg);
+    margin-left: 35px;
+    position: absolute;
+    margin-top: 42px;
+    display: none;
+    top: 50%;
+}
+.hangman-part-7{
+    width: 3px;
+    height: 200px;
+    background-color: red;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 35%;
+    display: none;
 }
