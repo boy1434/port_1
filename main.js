@@ -15,10 +15,10 @@ function play() {
     let go_btn = $('.go_btn');
     let reset_btn = $('.reset_btn');
     let result = $('.result');
-    let hangmanParts = $('.hangman-part');
-    let crossLine = $('.cross_line');
+    let hangmanParts = $('.hangman span'); // hangman 파트의 모든 span 태그 선택
 
     go_btn.on('click', function() {
+        $('.chance').css('display', 'block');
         let userNum = parseInt($('.user_num').val());
         if (isNaN(userNum)) {
             result.text("1부터 50 사이의 숫자를 입력해 주세요");
@@ -61,7 +61,7 @@ function play() {
         $('.user_num').val('');
         go_btn.prop('disabled', false);
         randomNum();
-        hangmanParts.css('display', 'none');
+        hangmanParts.css('display', 'none'); // 모든 hangman span 태그 숨기기
     });
 }
 
